@@ -1,0 +1,14 @@
+{
+	"!help" : "`/help`\n\nProvides total list of commands with small description",
+	"!helpme" : "`/helpme` <!command>\n\nProvides full description and argument requirements of command",
+	"!setname" : "`/setname` <username>\n\n**Requirements:**\n\n__<username>:__\nmin legth - 3 symbols\nmax legth - 12 symbols\n\nCan be used for name change\n*__Creates session for new users__",
+	"!setpass" : "`/setpass` <password>\n\n**Requirements:**\n\n__<password>:__\nmin legth - 3 symbols\nmax legth - 64 symbols\n\nCan be used for password change",
+	"!login" : "`/login` <username> <password>\n\n**Requirements:**\n\n__<username>:__\nThe username of profile\n__<password>:__\nThe password of profile\n\nCan be used for getting username from other profile",
+	"!profile" : "`/profile`\n\nProvides your profile info\n*__ Don't forward to other users__",
+	"!newroom" : "`/newroom` <room name> <password> <type>\n\n**Requirements:**\n\n__<room name>:__\nPublic name of your room\n__<password>:__\nmin legth - 6 symbols\nmax legth - 12 symbols\n__<type>:__\nopen or private\n\nCan be used for room creation",
+	"!delroom" : "`/delroom` <room name> <password>\n\nCan be used for room delete\n*__Only creator can delete room__",
+	"!connect" : "`/connect` <room name> <password>\n\n**Requirements:**\n\n__<password>:__\nOnly when connecting to private room\n\nCan be used to connect to the room\n*__To send message, please reply to Chat History you're connected__",
+	"!disconnect" : "`/disconnect`\n\nCan be used to disconnect from room",
+	"!list" : "`/list`\n\nProvides total list of **open** rooms",
+	"!dev" : "`/dev`\n\nJust type to know ( ͡° ͜ʖ ͡°)"
+}
