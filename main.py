@@ -641,13 +641,13 @@ async def main(event):
 
 						hashid = sha256(f"{user_id}".encode("utf-8")).hexdigest()
 
-						conn_msg = users.get(hashid)[2]
+						local_userdata = users.get(hashid)
+
+						conn_msg = local_userdata[2]
 
 						out_text = f"{conn_msg[1]}\n**{userdata[0]}**\n{event.text}\n"
 
-						userdata = users.get(hashid)
-
-						users.update({hashid : [userdata[0], userdata[1], [userdata[2][0], out_text]]})
+						users.update({hashid : [local_userdata[0], local_userdata[1], [local_userdata[2][0], out_text]]})
 
 						await client.edit_message(user_id, conn_msg[0], out_text)
 
