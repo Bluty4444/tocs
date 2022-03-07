@@ -3,7 +3,7 @@ from hashlib import sha256
 import asyncio
 import json
 
-#logging | delete or comment for disable
+# logging | delete or comment for disable
 import logging
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)
@@ -635,19 +635,21 @@ async def main(event):
 
 				user_ids = rooms.get(roomname)[1]
 
+				in_text = f"**{userdata[0]}**\n{event.text}"
+
 				if user_ids != None:
 				
 					for user_id in user_ids:
 
 						hashid = sha256(f"{user_id}".encode("utf-8")).hexdigest()
 
-						local_userdata = users.get(hashid)
+						userdata = users.get(hashid)
 
-						conn_msg = local_userdata[2]
+						conn_msg = userdata[2]
 
-						out_text = f"{conn_msg[1]}\n**{userdata[0]}**\n{event.text}\n"
+						out_text = f"{conn_msg[1]}\n{in_text}\n"
 
-						users.update({hashid : [local_userdata[0], local_userdata[1], [local_userdata[2][0], out_text]]})
+						users.update({hashid : [userdata[0], userdata[1], [userdata[2][0], out_text]]})
 
 						await client.edit_message(user_id, conn_msg[0], out_text)
 
