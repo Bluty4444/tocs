@@ -1,10 +1,10 @@
 # tocs
 TOCS - is the TelegramOpenChatSystem that allows you to chat with other people without binding your personal data!
 
-- [What is?](https://github.com/Bluty4444/tocs/edit/master/README.md#what-is)
-- [Getting started](https://github.com/Bluty4444/tocs/edit/master/README.md#getting-started)
-- [All commands](https://github.com/Bluty4444/tocs/edit/master/README.md#all-commands)
-- [For Devs](https://github.com/Bluty4444/tocs/edit/master/README.md#for-devs)
+- [What is?](https://github.com/Bluty4444/tocs#what-is)
+- [Getting started](https://github.com/Bluty4444/tocs#getting-started)
+- [All commands](https://github.com/Bluty4444/tocs#all-commands)
+- [For Devs](https://github.com/Bluty4444/tocs#for-devs)
 
 # What is?
 TOCS was inspired by xmpp chat systems and now endures it experence to telegram! Telegram is centralized system with general server on the top and client on the bottom, the tocs rejects this  idea and provides system without servers. The tocs won't collect your data and chat history and can be imply maintained only by one telegram bot! 
